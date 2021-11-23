@@ -2,6 +2,6 @@
 
 int main()
 {
-    printf("Efstratia Kazi");
+    printf("Onomatepwnymo");
     return 0;
 }
