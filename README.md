@@ -88,8 +88,11 @@
 ## Εργασίες
 
 - [Δοκιμαστική εργασία](ergasies/dokimastiki.md)
+  - [Λύση Δοκιμαστικής Εργασίας](ergasies/source/0_ct20044.c)
 - [Εργασία 1](ergasies/ergasia-01.md)
+  - [Λύση Εργασίας 1](ergasies/source/1_ct20044.c)
 - [Εργασία 2](ergasies/ergasia-02.md)
+  - [Λύση Εργασίας 2](ergasies/source/2_ct20044.c)
 
 ## Κουίζ
 
