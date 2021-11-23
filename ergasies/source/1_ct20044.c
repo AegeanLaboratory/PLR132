@@ -16,10 +16,10 @@ int main()
 {
     int apo, ews, etos, hmera;
 
-    printf("Arxi etos :");
+    printf("Arxi etos: ");
     scanf("%d", &apo);
 
-    printf("Telos etos :");
+    printf("Telos etos: ");
     scanf("%d", &ews);
 
     for (etos = apo; etos <= ews; etos++)
