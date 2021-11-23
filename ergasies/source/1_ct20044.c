@@ -1,5 +1,5 @@
 /*
-Efstratia Kazi (ct20044)
+Onomatepwnymo (ctxxxxx)
 
 To programma ipologizei pote peftei to pasxa kathe xrono. zitame 
 apo ton xristi tin arxi kai to telos kai emfanizei stin konsola thn 
@@ -9,8 +9,8 @@ onoma mas kai to epitheto mas opos episis kai to CT mas.
 
 #include <stdio.h>
 
-#define NAME "Efstratia Kazi"
-#define CT "ct20044"
+#define NAME "Onomatepwnymo"
+#define CT "ctxxxxx"
 
 int main()
 {
