@@ -1,3 +1,6 @@
+// Onomatepwnymo1 ctxxxxx
+// Onomatepwnymo2 ctxxxxx
+
 #include <stdio.h>
 
 #define ONOMA "Onomatepwnymo"
