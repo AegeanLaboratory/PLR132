@@ -1,11 +1,5 @@
-/*
-Onomatepwnymo (ctxxxxx)
-
-To programma ipologizei pote peftei to pasxa kathe xrono. zitame 
-apo ton xristi tin arxi kai to telos kai emfanizei stin konsola thn 
-imera pou peftei to pasxa. Sto telos blepoume se mia grammi to
-onoma mas kai to epitheto mas opos episis kai to CT mas.
-*/
+// Onomatepwnymo1 ctxxxxx
+// Onomatepwnymo2 ctxxxxx
 
 #include <stdio.h>
 
