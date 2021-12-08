@@ -7,7 +7,28 @@
 Να γραφεί πρόγραµµα που να διαβάζει τις τιµές δύο ακέραιων µεταβλητών και να αντιµεταθέτει τα περιεχόµενά τους π.χ. αν έχουν τιµές 7 και 20, να αποκτήσουν τιµές 20 και 7 αντίστοιχα. Να εµφανίζει τα περιεχόµενα των µεταβλητών πριν και µετά την αντιµετάθεση.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int num1, num2, temp;
+
+    printf("Dwse enan arithmo: ");
+    scanf("%d", &num1);
+
+    printf("Dwse akoma enan arithmo: ");
+    scanf("%d", &num2);
+
+    printf("\nPrin tin antimetathesi\nnum1 = %d\nnum2 = %d", num1, num2);
+
+    temp = num1;
+    num1 = num2;
+    num2 = temp;
+
+    printf("\n\nMeta tin antimetathesi\nnum1 = %d\nnum2 = %d", num1, num2);
+
+    return 0;
+}
 ```
 
 Για να δείτε τη **ΛΥΣΗ** πατήστε [εδώ](source/exercise_1_01.c).
@@ -17,7 +38,30 @@
 Να γραφεί πρόγραµµα το οποίο θα ζητά έναν αριθµό από τον χρήστη και θα ελέγχει αν ο αριθµός είναι θετικός, αρνητικός ή µηδέν, εµφανίζοντας κατάλληλο µήνυµα.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int num;
+
+    printf("Dwse enan arithmo: ");
+    scanf("%d", &num);
+
+    if (num > 0)
+    {
+        printf("To %d einai thetikos arithmos.", num);
+    }
+    else if (num < 0)
+    {
+        printf("To %d einai arnitikos arithmos.", num);
+    }
+    else
+    {
+        printf("O arithmos pou edwses einai to miden.");
+    }
+
+    return 0;
+}
 ```
 
 Για να δείτε τη **ΛΥΣΗ** πατήστε [εδώ](source/exercise_1_02.c).
@@ -27,7 +71,27 @@
 Να γραφεί πρόγραµµα που να διαβάζει έναν πραγµατικό αριθµό από τον χρήστη και θα ελέγχει αν ο αριθµός είναι µεγαλύτερος η ίσος µε το 0. Στη περίπτωση που είναι, να εµφανίζει την τετραγωνική ρίζα του αριθµού διαφορετικά να εµφανίζει το µήνυµα "Λάθος αριθµός".
 
 ```c
+#include <stdio.h>
+#include <math.h>
 
+int main()
+{
+    float num;
+
+    printf("Dwse arithmo: ");
+    scanf("%f", &num);
+
+    if (num >= 0)
+    {
+        printf("H tetrwgoniki riza tou %.2f einai %.2f.", num, sqrt(num));
+    }
+    else
+    {
+        printf("Lathos arithmos!");
+    }
+
+    return 0;
+}
 ```
 
 Για να δείτε τη **ΛΥΣΗ** πατήστε [εδώ](source/exercise_1_03.c).
