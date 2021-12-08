@@ -11,7 +11,8 @@ int main()
     scanf("%d", &b);
 
     for (i = a; i <= b; i++)
+    {
         printf("%d\n", i);
-
+    }
     return 0;
 }
