@@ -74,6 +74,7 @@
 - [1η Ομάδα Ασκήσεων](exercises/exercises-01.md)
 - [2η Ομάδα Ασκήσεων](exercises/exercises-02.md)
 - [3η Ομάδα Ασκήσεων](exercises/exercises-03.md)
+- [4η Ομάδα Ασκήσεων](exercises/exercises-04.md)
 
 ## Λυμένα παραδείγματα
 
