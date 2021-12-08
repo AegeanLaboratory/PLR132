@@ -287,7 +287,25 @@ int main()
 Να γραφεί πρόγραµµα το οποίο να ζητάει το χρόνο σε δευτερόλεπτα, και να εµφανίζει το πλήθος των ωρών, των λεπτών και των δευτερολέπτων που αντιστοιχούν στο χρόνο που δόθηκε.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int var, hour, minutes, seconds, num;
+
+    printf("Dwse xrono se deuterolepta: ");
+    scanf("%d", &var);
+
+    hour = (var / 3600);
+    num = (var % 3600);
+    minutes = (num / 60);
+    seconds = (num % 60);
+
+    printf("\nTa %d deuterolepta einai:\n", var);
+    printf("%d wres\n%d lepta\n%d deuterolepta", hour, minutes, seconds);
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_1_09.c).
@@ -301,7 +319,33 @@ int main()
 * Για εισοδήµατα πάνω από 15000€ ο φόρος είναι 20%.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    float eisodima, foros;
+
+    printf("Dwse to eisodima sou: ");
+    scanf("%f", &eisodima);
+
+    if (eisodima <= 10000)
+    {
+        foros = 0;
+        printf("Me eisodima %.2f o foros einai: %.2f", eisodima, foros);
+    }
+    else if (eisodima <= 15000)
+    {
+        foros = eisodima * 0.1;
+        printf("Me eisodima %.2f o foros einai: %.2f", eisodima, foros);
+    }
+    else
+    {
+        foros = eisodima * 0.2;
+        printf("Me eisodima %.2f o foros einai: %.2f", eisodima, foros);
+    }
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_1_10.c).
