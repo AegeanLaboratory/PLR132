@@ -2,23 +2,23 @@
 
 int main()
 {
-	int num;
+    int num;
 
-	printf("Dwse enan arithmo: ");
-	scanf("%d", &num);
+    printf("Dwse enan arithmo: ");
+    scanf("%d", &num);
 
-	if (num > 0)
-	{
-		printf("To %d einai thetikos arithmos.", num);
-	}
-	else if (num < 0)
-	{
-		printf("To %d einai arnitikos arithmos.", num);
-	}
-	else
-	{
-		printf("O arithmos pou edwses einai to miden.");
-	}
+    if (num > 0)
+    {
+        printf("To %d einai thetikos arithmos.", num);
+    }
+    else if (num < 0)
+    {
+        printf("To %d einai arnitikos arithmos.", num);
+    }
+    else
+    {
+        printf("O arithmos pou edwses einai to miden.");
+    }
 
-	return 0;
+    return 0;
 }
