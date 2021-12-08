@@ -7,7 +7,8 @@ int main()
     printf("Poio mina thes na deis (1-12)? ");
     scanf("%d", &month);
 
-    switch(month){
+    switch(month)
+    {
         case 1:
             printf("O %dos minas einai o Ianouarios kai exei 31 meres.", month);
             break;
