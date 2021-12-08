@@ -2,12 +2,12 @@
 
 int main()
 {
-	char ch;
-	
-	printf("Dwse enan charakrita: ");
-	scanf("%c", &ch);
-	
-	printf("O kwdikas tou charaktira '%c' sto ASCII einai to %d.",ch, ch);
+    char ch;
 
-	return 0;
+    printf("Dwse enan charakrita: ");
+    scanf("%c", &ch);
+
+    printf("O kwdikas tou charaktira '%c' sto ASCII einai to %d.",ch, ch);
+
+    return 0;
 }
