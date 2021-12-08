@@ -3,20 +3,19 @@
 
 int main()
 {
+    float num;
 
-	float num;
+    printf("Dwse arithmo: ");
+    scanf("%f", &num);
 
-	printf("Dwse arithmo: ");
-	scanf("%f", &num);
+    if (num >= 0)
+    {
+        printf("H tetrwgoniki riza tou %.2f einai %.2f.", num, sqrt(num));
+    }
+    else
+    {
+        printf("Lathos arithmos!");
+    }
 
-	if (num >= 0)
-	{
-		printf("H tetrwgoniki riza tou %.2f einai %.2f.", num, sqrt(num));
-	}
-	else
-	{
-		printf("Lathos arithmos!");
-	}
-
-	return 0;
+    return 0;
 }
