@@ -101,7 +101,27 @@ int main()
 Να γραφεί πρόγραµµα που να διαβάζει έναν ακέραιο και να εµφανίζει το τετράγωνό του (x^2) αν είναι άρτιος ή τον κύβο του (x^3) αν είναι περιττός.
 
 ```c
+#include <stdio.h>
+#include <math.h>
 
+int main()
+{
+    int num;
+
+    printf("Dwse arithmo: ");
+    scanf("%d", &num);
+
+    if (num % 2 == 0)
+    {
+        printf("To tetragwno tou arithmou %d einai: %.2f", num, pow(num,2));
+    }
+    else
+    {
+        printf("O kubos tou arithmou %d einai: %.2f", num, pow(num,3));
+    }
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_1_04.c).
@@ -111,7 +131,36 @@ int main()
 Να γίνει πρόγραµµα που να βρίσκει και να εµφανίζει τον µικρότερο µεταξύ τριών αριθµών που θα δίδονται από το πληκτρολόγιο.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int num1, num2, num3;
+
+    printf("Dwse ton 1o arithmo: ");
+    scanf("%d", &num1);
+
+    printf("Dwse ton 2o arithmo: ");
+    scanf("%d", &num2);
+
+    printf("Dwse ton 3o arithmo: ");
+    scanf("%d", &num3);
+
+    int max = num1;
+
+    if (num2 > max)
+    {
+        max = num2;
+    }
+    if (num3 > max)
+    {
+        max = num3;
+    }
+
+    printf("O megaluteros arithmos einai to %d.", max);
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_1_05.c).
@@ -121,7 +170,42 @@ int main()
 Για τον τελικό βαθµό των εργασιών του µαθήµατος **ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΙΙΙ** δεν υπολογίζονται οι εργασίες µε τον µεγαλύτερο και µικρότερο βαθµό. Να γραφεί πρόγραµµα το οποίο να ζητάει τους πέντε βαθµούς των εργασιών και να υπολογίζει τον µέσο όρο των τριών από αυτές χωρίς να λαµβάνει υπόψη τις εργασίες µε τον µεγαλύτερο και τον µικρότερο βαθµό.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    float b1, b2, b3, b4, b5;
+
+    printf("Dwse vathmo 1: ");
+    scanf("%f", &b1);
+    printf("Dwse vathmo 2: ");
+    scanf("%f", &b2);
+    printf("Dwse vathmo 3: ");
+    scanf("%f", &b3);
+    printf("Dwse vathmo 4: ");
+    scanf("%f", &b4);
+    printf("Dwse vathmo 5: ");
+    scanf("%f", &b5);
+
+    float max = b1, min = b1;
+
+    if (b2 > max) max = b2;
+    else if (b2 < min) min = b2;
+    if (b3 > max) max = b3;
+    else if (b3 < min) min = b3;
+    if (b4 > max) max = b4;
+    else if (b4 < min) min = b4;
+    if (b5 > max) max = b5;
+    else if (b5 < min) min = b5;
+
+    int sum = b1 + b2 + b3 + b4 + b5 - max - min;
+
+    float mo = sum/3.0;
+
+    printf("MO: %.2f", mo);
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_1_06.c).
@@ -131,7 +215,59 @@ int main()
 Να γραφεί πρόγραµµα το οποίο δέχεται ως είσοδο τον αριθµό ενός µήνα (1-12) και να εµφανίζει το όνοµα του µήνα καθώς και τις µέρες που διαθέτει (π.χ Ιανουάριος 31). Θεωρήστε ότι ο Φεβρουάριος έχει πάντα 28 ηµέρες. Αν δοθεί αριθµός εκτός ορίων (π.χ µικρότερος του 1 και µεγαλύτερος από 12) να βγάζει το κατάλληλο µήνυµα.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int month;
+
+    printf("Poio mina thes na deis (1-12)? ");
+    scanf("%d", &month);
+
+    switch(month){
+        case 1:
+            printf("O %dos minas einai o Ianouarios kai exei 31 meres.", month);
+            break;
+        case 2:
+            printf("O %dos minas einai o Febrouarios kai exei 28 meres.", month);
+            break;
+        case 3:
+            printf("O %dos minas einai o Martios kai exei 31 meres.", month);
+            break;
+        case 4:
+            printf("O %dos minas einai o Aprilios kai exei 30 meres.", month);
+            break;
+        case 5:
+            printf("O %dos minas einai o Maios kai exei 31 meres.", month);
+            break;
+        case 6:
+            printf("O %dos minas einai o Iounios kai exei 30 meres.", month);
+            break;
+        case 7:
+            printf("O %dos minas einai o Ioulios kai exei 31 meres.", month);
+            break;
+        case 8:
+            printf("O %dos minas einai o Augoustos kai exei 31 meres.", month);
+            break;
+        case 9:
+            printf("O %dos minas einai o Septemvrios kai exei 30 meres.", month);
+            break;
+        case 10:
+            printf("O %dos minas einai o Oktovrios kai exei 31 meres.", month);
+            break;
+        case 11:
+            printf("O %dos minas einai o Noemvrios kai exei 30 meres.", month);
+            break;
+        case 12:
+            printf("O %dos minas einai o Dekemvrios kai exei 31 meres.", month);
+            break;
+        default:
+            printf("Kati pige lathos!");
+            break;
+    }
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_1_07.c).
