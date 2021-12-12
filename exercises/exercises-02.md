@@ -107,11 +107,57 @@ int main()
 
 Να γραφεί πρόγραµµα το οποίο θα εµφανίζει στην οθόνη όλους τους χαρακτήρες του πίνακα ASCII από τη θέση 32 µέχρι την 128, εµφανίζοντας 10 χαρακτήρες σε κάθε γραµµή.
 
-```c
+1ος τρόπος:
 
+```c
+#include <stdio.h>
+
+#define START 32
+#define END 128
+
+int main()
+{
+    int i;
+    int j = 0;
+
+    for (i = START; i <= END; i++, j++)
+    {
+        if(!(j % 10) && (j != 0))
+            putchar('\n');
+        printf("%d=%c, ", i, i);
+    }
+
+    return 0;
+}
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_05.c).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_05a.c).
+
+2ος τρόπος:
+
+```c
+#include <stdio.h>
+
+#define START 32
+#define END 128
+
+int main()
+{
+	int i;
+	int j = 1;
+	
+	for (i = START; i <= END; i++, j++)
+	{
+		printf("%d=%c, ", i, i);
+		if(!(j % 10))
+			putchar('\n');
+	}
+	
+	return 0;
+}
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_05b.c).
 
 ## Άσκηση 6
 
