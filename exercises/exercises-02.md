@@ -7,7 +7,21 @@
 Να γραφεί πρόγραµµα που να υπολογίζει το άθροισµα των ακέραιων αριθµών από 1 µέχρι 1000.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int i, sum = 0;
+
+    for (i = 1; i <= 1000; i++)
+    {
+        sum += i;
+    }
+
+    printf("Sum: %d", sum);
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_01.c).
@@ -17,7 +31,23 @@
 Να γραφεί πρόγραµµα που να ζητάει έναν ακέραιο αριθµό Ν και να εµφανίζει το γινόµενο των αριθµών από το 1 µέχρι Ν (1*2*3 ... *Ν).
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int i, num, mul = 1;
+
+    printf("Dwse enan arithmo: ");
+    scanf("%d", &num);
+
+    for ( i = 1; i <= num; i++){
+        mul *= i;
+    }
+
+    printf("To ginomeno twn arithmwn apo to 1 ews kai to %d einai %d.", num, mul);
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_02.c).
@@ -27,7 +57,23 @@
 Να γραφεί πρόγραµµα το οποίο θα δέχεται ένα χαρακτήρα ch και έναν ακέραιο n και θα εµφανίζει σε µία σειρά της οθόνης n χαρακτήρες ch στην σειρά. Π.χ 30 αστεράκια!
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    char ch;
+    int n, i;
+
+    printf("Dwse enan charaktira kai enan arithmo: ");
+    scanf("%c %d", &ch, &n);
+
+    for (i = 0; i < n; i++)
+    {
+        printf("%c", ch);
+    }
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_03.c).
@@ -37,7 +83,22 @@
 Να γραφεί πρόγραµµα που θα υπολογίζει το άθροισµα των κλασµάτων 1/1 + 1/2 +1/3 +1/4 + 1/5 + .. + 1/100.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    float sum = 0;
+    int i;
+
+    for (i = 1; i <= 100; i++)
+    {
+        sum += 1.0/i;
+    }
+
+    printf("Sum: %f", sum);
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_04.c).
@@ -57,7 +118,28 @@
 Να γίνει πρόγραµµα το οποίο θα διαβάζει ακέραιους από το πληκτρολόγιο µέχρι να δεχτεί το 0. Στη συνέχεια θα εµφανίζει το πλήθος των θετικών και των αρνητικών αριθµών.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int num, c1 = 0, c2 = 0;
+
+    do
+    {
+        printf("Dwse arithmo: ");
+        scanf("%d", &num);
+
+        if (num > 0)
+            c1++;
+        else if (num < 0)
+            c2++;
+    } while (num != 0);
+
+    printf("To plithos twn thetikwn arithmwn einai %d.", c1);
+    printf("\nTo plithos twn arnitikwn arithmwn einai %d.", c2);
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_06.c).
@@ -87,7 +169,33 @@
 Το Ν θα προσδιορίζει το ύψος που θα έχει το σχήµα σε γραµµές. Π.χ το παραπάνω σχήµα έγινε για Ν=5.
 
 ```c
+#include <stdio.h>
 
+int main()
+{	
+    int i, space, seires, c = 0;
+
+    printf("Dwse enan arithmo gia sxima: ");
+    scanf("%d", &seires);
+
+    for (i = 1; i <= seires; ++i, c = 0)
+    {
+      for (space = 1; space <= seires - i; ++space)
+      {
+         printf("  ");
+      }
+
+      while (c != 2 * i - 1)
+      {
+         printf("* ");
+         ++c;
+      }
+
+      printf("\n");
+    }
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_08.c).
@@ -97,7 +205,31 @@
 Να γίνει πρόγραµµα το οποίο θα διαβάζει 30 πραγµατικούς αριθµούς από το χρήστη. Το πρόγραµµα θα πρέπει να εκτυπώνει τον µεγαλύτερο από τους 30 αριθµούς. Θεωρήστε ότι όλοι οι αριθµοί είναι θετικοί.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    float num, max = 0.0;
+    int counter = 0;
+
+    do
+    {
+        printf("Dwse arithmo: ");
+        scanf("%f", &num);
+
+        if (num > max)
+        {
+            max = num;
+        }
+
+        counter++;
+
+    } while(counter < 30);
+
+    printf("\nO megalyteros arithmos einai to %.2f", max);
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_09.c).
@@ -107,7 +239,24 @@
 Να γίνει πρόγραµµα το οποίο θα διαβάζει δύο ακέραιους αριθµούς a και b και θα εµφανίζει τους ακέραιους αριθµούς από το a µέχρι το b.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int i, a, b;
+
+    printf("Dwse ton 1o arithmo: ");
+    scanf("%d", &a);
+
+    printf("Dwse ton 2o arithmo: ");
+    scanf("%d", &b);
+
+    for (i = a; i <= b; i++)
+    {
+        printf("%d\n", i);
+    }
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_10.c).
@@ -199,7 +348,24 @@ C++ 3
 ```
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int i, j;
+
+    for (i = 1; i <= 3; i++)
+    {
+        for (j = 1; j <= 3; j++)
+        {
+            printf("\nC++ %d", j);
+        }
+        
+        printf("\n=====");
+    }
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_16.c).
@@ -222,7 +388,24 @@ C++ 3
 ```
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int i, j;
+
+    for (i = 1; i <= 10; i++)
+    {
+        for (j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_2_17.c).
