@@ -11,7 +11,9 @@ int main()
     for (i = START; i <= END; i++, j++)
     {
         if(!(j % 10) && (j != 0))
+        {
             putchar('\n');
+        }
         printf("%d=%c, ", i, i);
     }
 
