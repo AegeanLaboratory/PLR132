@@ -414,7 +414,15 @@ int main(){
 Να γραφεί πρόγραµµα το οποίο να εµφανίζει τους χαρακτήρες µε **ASCII** κωδικούς 80, 65, 66 και 47.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    printf("Xaraktires me ASCII kwdika:\n");
+    printf("80 = %c\n65 = %c\n66 = %c\n47 = %c", 80, 65, 66, 47);
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_1_14.c).
