@@ -432,7 +432,19 @@ int main()
 Να γραφεί πρόγραµµα το οποίο να διαβάζει ένα χαρακτήρα από το πληκτρολόγιο και να εµφανίζει τον ίδιο τον χαρακτήρα καθώς και τον **ASCII** κωδικό του.
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    char ch;
+
+    printf("Dwse enan charakrita: ");
+    scanf("%c", &ch);
+
+    printf("O kwdikas tou charaktira '%c' sto ASCII einai to %d.",ch, ch);
+
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_1_15.c).
