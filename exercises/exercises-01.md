@@ -376,7 +376,35 @@ int main()
 Το είδος ενός γραµµατοσήµου καθορίζεται από τον χαρακτήρα Ε για εσωτερικού, Α για εξωτερικού και Τ για τοπικές αποστολές. Κάθε γραµµατόσηµο κατηγορίας Ε κοστίζει 0.23€, κατηγορίας Α 0.70€ και κατηγορίας Τ 0.15€. Να γραφεί πρόγραµµα το οποίο θα ζητάει να πληκτρολογήσουµε τη ποσότητα και το είδος των γραµµατοσήµων που θέλουµε να αγοράσουµε και θα υπολογίζει το ποσό που πρέπει να πληρώσουµε.
 
 ```c
+#include <stdio.h>
 
+#define E 0.23
+#define A 0.70
+#define T 0.15
+
+int main(){
+    float poso;
+    char eidos;
+
+    printf("Posa grammatosima theleis kai poio eidos (E-A-T)? ");
+    scanf("%f %c", &poso, &eidos);
+
+    switch(eidos)
+    {
+        case 'E':
+            printf("Me to eidos %c tha plirwseis %.2f.", eidos, (poso*E));
+            break;
+        case 'A':
+            printf("Me to eidos %c tha plirwseis %.2f.", eidos, (poso*A));
+            break;
+        case 'T':
+            printf("Me to eidos %c tha plirwseis %.2f.", eidos, (poso*T));
+            break;
+        default:
+            printf("To eidos pou zitas den yparxei!");
+    }
+    return 0;
+}
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_1_13.c).
