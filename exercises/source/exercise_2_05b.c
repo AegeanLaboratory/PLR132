@@ -12,7 +12,9 @@ int main()
     {
         printf("%d=%c, ", i, i);
         if(!(j % 10))
+        {
             putchar('\n');
+        }
     }
 
     return 0;
