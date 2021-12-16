@@ -24,7 +24,7 @@ int main()
     {
         switch(digit_1)
         {
-            case 1:	printf("deka"); break;
+            case 1: printf("deka"); break;
             case 2: printf("eikosi"); break;
             case 3: printf("trianta"); break;  
             case 4: printf("saranta"); break;   
