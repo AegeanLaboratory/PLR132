@@ -376,7 +376,7 @@ int main()
 
     digit_1=number/10;
     digit_2=number%10;
-    
+
     printf("\nO arithmos %d olografws grafete ws eksis: ", number);
 
     if(number>=10 && number<=12)
@@ -389,10 +389,10 @@ int main()
         }
     }
     else
-	{
+    {
         switch(digit_1)
         {
-        	case 1:	printf("deka"); break;
+            case 1:	printf("deka"); break;
             case 2: printf("eikosi"); break;
             case 3: printf("trianta"); break;  
             case 4: printf("saranta"); break;   
@@ -416,8 +416,8 @@ int main()
             case 8: printf("oxto"); break;
             case 9: printf("ennia"); break;
         }      	
-	}
-	return 0;
+    }
+    return 0;
 }
 ```
 
