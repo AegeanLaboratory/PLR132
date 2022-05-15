@@ -1,5 +1,3 @@
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Feffie375.github.io%2FTPTE-AEGEAN&count_bg=%23E3802B&title_bg=%2307359E&icon=internetarchive.svg&icon_color=%23E7E7E7&title=%CE%A0%CF%81%CE%BF%CE%B2%CE%BF%CE%BB%CE%AD%CF%82&edge_flat=false)](https://hits.seeyoufarm.com)
-
 # Αλγόριθμοι και Δομές Δεδομένων
 
 Στο μάθημα αυτό αναλύονται βασικές αλγοριθμικές τεχνικές στη γλώσσα προγραμματισμού C, όπως για παράδειγμα:
@@ -41,20 +39,6 @@
 
 Για οδηγίες εγκατάστασης πατήστε [εδώ](installation.md).
 
-## Διαλέξεις
-
-- [1η Διάλεξη](lectures/lecture-01.md)
-- [2η Διάλεξη](lectures/lecture-02.md)
-- [3η Διάλεξη](lectures/lecture-03.md)
-- [4η Διάλεξη](lectures/lecture-04.md)
-- [5η Διάλεξη](lectures/lecture-05.md)
-- [6η Διάλεξη](lectures/lecture-06.md)
-- [7η Διάλεξη](lectures/lecture-07.md)
-- [8η Διάλεξη](lectures/lecture-08.md)
-- [9η Διάλεξη](lectures/lecture-09.md)
-- [10η Διάλεξη](lectures/lecture-10.md)
-- [11η Διάλεξη](lectures/lecture-11.md)
-
 ## Εργαστήρια
 
 - [1o Εργαστήριο](labs/lab-01.md)
@@ -94,12 +78,6 @@
   - [Λύση Εργασίας 1](ergasies/source/1_ctxxxxx.c)
 - [Εργασία 2](ergasies/ergasia-02.md)
   - [Λύση Εργασίας 2](ergasies/source/2_ctxxxxx.c)
-
-## Κουίζ
-
-- [Εισαγωγή στη C](https://forms.gle/tgVCLhjnBcwVvHd2A)
-- [Η συνάρτηση printf()](https://forms.gle/c6jhKVJQvMY7ivnaA)
-- []()
 
 ## Λεξικό
 
