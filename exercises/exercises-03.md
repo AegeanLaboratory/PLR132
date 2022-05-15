@@ -1,5 +1,3 @@
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Feffie375.github.io%2FTPTE-AEGEAN&count_bg=%23E3802B&title_bg=%2307359E&icon=internetarchive.svg&icon_color=%23E7E7E7&title=%CE%A0%CF%81%CE%BF%CE%B2%CE%BF%CE%BB%CE%AD%CF%82&edge_flat=false)](https://hits.seeyoufarm.com)
-
 # 3η Οµάδα ασκήσεων
 
 ## Άσκηση 1
@@ -23,7 +21,7 @@ void info()
 }
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_3_01.c).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise-03-01.c).
 
 ## Άσκηση 2
 
@@ -33,7 +31,7 @@ void info()
 
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_3_02.c).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise-03-02.c).
 
 ## Άσκηση 3
 
@@ -66,7 +64,7 @@ int sum(int n)
 }
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_3_03.c).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise-03-03.c).
 
 ## Άσκηση 4
 
@@ -98,7 +96,7 @@ void symbols(int n, char ch)
 }
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_3_04.c).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise-03-04.c).
 
 ## Άσκηση 5
 
@@ -108,7 +106,7 @@ void symbols(int n, char ch)
 
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_3_05.c).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise-03-05.c).
 
 ## Άσκηση 6
 
@@ -118,7 +116,7 @@ void symbols(int n, char ch)
 
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_3_06.c).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise-03-06.c).
 
 ## Άσκηση 7
 
@@ -128,7 +126,7 @@ void symbols(int n, char ch)
 
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_3_07.c).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise-03-07.c).
 
 ## Άσκηση 8
 
@@ -138,7 +136,7 @@ void symbols(int n, char ch)
 
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_3_08.c).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise-03-08.c).
 
 ## Άσκηση 9
 
@@ -161,7 +159,7 @@ float mo(float a, float b)
 }
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_3_09.c).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise-03-09.c).
 
 ## Άσκηση 10
 
@@ -171,4 +169,4 @@ float mo(float a, float b)
 
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise_3_10.c).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/exercise-03-10.c).
